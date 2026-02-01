@@ -421,6 +421,7 @@ RUN \
             proton-cachyos \
             vulkan-radeon \
             lib32-vulkan-radeon \
+            manohud \
     && \
     echo "**** Section cleanup ****" \
 	    && pacman -Scc --noconfirm \
