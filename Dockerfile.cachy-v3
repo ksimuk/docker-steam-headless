@@ -183,7 +183,7 @@ RUN \
             xorg-xwininfo \
             xf86-input-evdev \
             xterm \
-            gamescope \
+            gamescope-plus \
             xf86-video-dummy \
     && \
     echo "**** Section cleanup ****" \
