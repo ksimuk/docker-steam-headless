@@ -14,7 +14,7 @@ if [ "${current_local}" != "${USER_LOCALES}" ]; then
 	export LC_ALL="${user_local}" 2> /dev/null
 	sleep 0.5
 	locale-gen
-	update-locale LC_ALL="${user_local}"
+	localectl set-locale "${user_local}"
 else
     print_step_header "Locales already set correctly to ${USER_LOCALES}"
 fi
