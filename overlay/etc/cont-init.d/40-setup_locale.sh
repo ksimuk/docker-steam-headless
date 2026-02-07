@@ -12,9 +12,10 @@ if [ "${current_local}" != "${USER_LOCALES}" ]; then
 	export LANGUAGE="${user_local}"
 	export LANG="${user_local}"
 	export LC_ALL="${user_local}" 2> /dev/null
+	echo -e "${user_local}\n" > "/etc/locale.conf"
 	sleep 0.5
 	locale-gen
-	localectl set-locale "${user_local}"
+	#localectl set-locale "${user_local}"
 else
     print_step_header "Locales already set correctly to ${USER_LOCALES}"
 fi
