@@ -422,6 +422,7 @@ RUN \
     vulkan-radeon \
     lib32-vulkan-radeon \
     mangohud \
+    lib32-mangohud \
     && \
     echo "**** Section cleanup ****" \
     && pacman -Scc --noconfirm \
